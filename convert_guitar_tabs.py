@@ -7,8 +7,8 @@ Finds lowest guitar note to determine offset needed to fit on banjo tuning. For 
 import re
 import numpy as np
 
-path = "such_great_heights.txt" # path to file to convert
-out_file = "such_great_heights_banjo.txt" # filename to save output to
+path = "friends.txt" # path to file to convert
+out_file = "friends_banjo.txt" # filename to save output to
 
 ADDITIONAL_OFF_SET = None # can add this to shift song up or down in addition to the conversion off set, adds to found off set
 USER_OFF_SET = None # can use this if you know the off set desired already, replaces found off set
@@ -17,7 +17,7 @@ USER_OFF_SET = None # can use this if you know the off set desired already, repl
 guitar_tuning = "EADGBE" # string order 654321
 
 # ignoring fifth string in conversion, worked out better to manually set that
-banjo_tuning = "CGBD" # string order 4321
+banjo_tuning = "DGBD" # string order 4321
 # lowest tunings gCGCD, fCFAC
 # 22 frets on banjo
 
